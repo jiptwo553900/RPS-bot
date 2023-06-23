@@ -15,3 +15,6 @@ async def main():
         level=logging.INFO,
         format="%(filename)s:%(lineno)d #%(levelname)-8s "
                "[%(asctime)s] - %(name)s - %(message)s")
+
+    # Выводим в консоль информацию о начале запуска бота
+    logger.info('Starting bot')
