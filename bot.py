@@ -9,8 +9,9 @@ from handlers import other_handlers, user_handlers
 logger = logging.getLogger(__name__)
 
 
-# Функция конфигурирования и запуска бота
 async def main():
+    """Функция конфигурирования и запуска бота"""
+
     # Конфигурируем логирование
     logging.basicConfig(
         level=logging.INFO,
