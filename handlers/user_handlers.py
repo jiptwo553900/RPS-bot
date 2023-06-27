@@ -12,13 +12,13 @@ router: Router = Router()
 @router.message(CommandStart())
 async def process_start_command(msg: Message):
     """Этот хэндлер срабатывает на команду /start"""
-    await msg.answer(text=LEXICON_RU["start"], reply_markup=yes_no_kb)
+    await msg.answer(text=LEXICON_RU["/start"], reply_markup=yes_no_kb)
 
 
 @router.message(Command(commands=["help"]))
 async def process_help_command(msg: Message):
     """Этот хэндлер срабатывает на команду /help"""
-    await msg.answer(text=LEXICON_RU["help"], reply_markup=yes_no_kb)
+    await msg.answer(text=LEXICON_RU["/help"], reply_markup=yes_no_kb)
 
 
 @router.message(Text(text=LEXICON_RU["yes_button"]))
